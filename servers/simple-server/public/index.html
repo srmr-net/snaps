@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snaps</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main id="shell" class="shell">
+      <section class="stage" aria-live="polite">
+        <img id="photo" alt="">
+        <div id="empty" class="empty">No album loaded</div>
+      </section>
+
+      <aside class="panel">
+        <div class="brand">
+          <h1>Snaps</h1>
+          <span id="status">Loading</span>
+        </div>
+
+        <label class="field">
+          <span>Playlist</span>
+          <input id="playlistUrl" type="url" spellcheck="false">
+        </label>
+
+        <div class="actions">
+          <button id="loadButton" type="button">Load</button>
+          <button id="playButton" type="button">Pause</button>
+          <button id="previousButton" type="button" aria-label="Previous photo">Prev</button>
+          <button id="nextButton" type="button" aria-label="Next photo">Next</button>
+          <button id="fullscreenButton" type="button">Full Screen</button>
+        </div>
+
+        <label class="field compact">
+          <span>Seconds</span>
+          <input id="duration" type="number" min="1" max="86400" step="1" value="15">
+        </label>
+
+        <select id="albumSelect" aria-label="Album"></select>
+
+        <div class="caption">
+          <h2 id="title"></h2>
+          <p id="caption"></p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="/client.js" type="module"></script>
+  </body>
+</html>

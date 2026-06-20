@@ -1,0 +1,13 @@
+{
+  "name": "@snaps/simple-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A simple combined Snaps protocol server and browser slideshow client.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
